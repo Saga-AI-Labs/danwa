@@ -33,6 +33,7 @@
   // override the field manually; we only fill in an empty value.
   const PROVIDER_DEFAULT_API_BASE = {
     tokenrouter: 'https://api.tokenrouter.com/v1',
+    orcarouter: 'https://api.orcarouter.ai/v1',
   };
   $effect(() => {
     if (type !== 'llm') return;
@@ -217,6 +218,7 @@
                 <option value="opencode-go">Opencode Go</option>
                 <option value="xiaomi">Xiaomi</option>
                 <option value="cloudflare">Cloudflare Workers AI</option>
+                <option value="orcarouter">Orcarouter</option>
                 <option value="tokenrouter">TokenRouter</option>
                 <option value="local">Local</option>
               </select>
