@@ -84,9 +84,9 @@ backend **and** any sibling frontends it detects in the parent directory.
 ```bash
 # 1. Clone all three repos as siblings
 mkdir ~/danwa-stack && cd ~/danwa-stack
-git clone https://github.com/asb-42/danwa-core.git
-git clone https://github.com/asb-42/danwa.git
-git clone https://github.com/asb-42/danwa-studio.git
+git clone https://github.com/Saga-AI-Labs/danwa-core.git
+git clone https://github.com/Saga-AI-Labs/danwa.git
+git clone https://github.com/Saga-AI-Labs/danwa-studio.git
 
 # 2. From danwa-core: bootstrap the whole stack
 cd danwa-core
@@ -193,7 +193,7 @@ If `setup.sh` itself can't find `libdanwa.sh`:
 # Manual fallback: copy from the monorepo or fetch from danwa-modules
 cp ../danwa-modules/scripts/libdanwa.sh .lib/libdanwa.sh
 # or:
-curl -L https://raw.githubusercontent.com/asb-42/danwa-modules/main/scripts/libdanwa.sh \
+curl -L https://raw.githubusercontent.com/Saga-AI-Labs/danwa-modules/main/scripts/libdanwa.sh \
      -o .lib/libdanwa.sh
 ```
 

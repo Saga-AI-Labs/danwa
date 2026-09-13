@@ -160,7 +160,7 @@ Für jede Kategorie unter `modules/` im Danwa-Projekt:
    a. Verzeichnis + alle Dateien kopieren
    b. `manifest.json` auf `schema_version: "3.0.0"` heben
    c. `compatibility.danwa_min_version = "2.1.0"` setzen
-   d. `repository`-Feld eintragen: `{type: "github", url: "https://github.com/asb-42/danwa-modules"}`
+   d. `repository`-Feld eintragen: `{type: "github", url: "https://github.com/Saga-AI-Labs/danwa-modules"}`
    e. SHA-256-Checksums neu berechnen und aktualisieren
    f. Validierung durchführen (siehe Validierungsregeln oben)
 
@@ -240,7 +240,7 @@ for manifest_path in sorted(ROOT.rglob("manifest.json")):
         "version": manifest["version"],
         "type": manifest.get("type", ""),
         "name": manifest.get("name", {}),
-        "download_url": f"https://github.com/asb-42/danwa-modules/releases/download/v{manifest['version']}/{manifest['module_id']}.zip",
+        "download_url": f"https://github.com/Saga-AI-Labs/danwa-modules/releases/download/v{manifest['version']}/{manifest['module_id']}.zip",
         "checksum_sha256": checksum,
     })
 
@@ -251,7 +251,7 @@ json.dump(INDEX, sys.stdout, indent=2, ensure_ascii=False)
 
 1. Ersten Commit: `chore: initial module repository with all Danwa modules`
 2. Tag als `v1.0.0`
-3. Push zu `github.com:asb-42/danwa-modules.git`
+3. Push zu `github.com:Saga-AI-Labs/danwa-modules.git`
 
 ---
 

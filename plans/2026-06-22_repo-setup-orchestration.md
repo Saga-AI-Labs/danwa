@@ -269,7 +269,7 @@ TOOLCHAIN_PYTHON=3.11
 TOOLCHAIN_NODE=22
 TOOLCHAIN_UV=required
 TOOLCHAIN_NPM=required
-DOCS_URL="https://github.com/asb-42/danwa-core"
+DOCS_URL="https://github.com/Saga-AI-Labs/danwa-core"
 ```
 
 **Beispiel `danwa/.danwa-config`:**

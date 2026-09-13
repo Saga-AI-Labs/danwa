@@ -89,7 +89,7 @@ Das aktuelle Schema (`schemas/module-manifest.json`) kennt keine Kompatibilität
   },
   "repository": {
     "type": "github",
-    "url": "https://github.com/asb-42/danwa-modules",
+    "url": "https://github.com/Saga-AI-Labs/danwa-modules",
     "ref": "v1.2.0"
   },
   "dependencies": {
@@ -120,7 +120,7 @@ Dynamische Metriken wie `translation_stats` gehören in den **autogenerierten `i
         "last_synced": "2026-05-22T10:00:00Z",
         "outdated": 12
       },
-      "download_url": "https://github.com/asb-42/danwa-modules/releases/download/v1.2.0/danwa-translations-de.zip",
+      "download_url": "https://github.com/Saga-AI-Labs/danwa-modules/releases/download/v1.2.0/danwa-translations-de.zip",
       "checksum_sha256": "abc123..."
     }
   ]
@@ -159,7 +159,7 @@ ohne das gesamte Repo zu klonen.
 ```json
 {
   "source": "github",
-  "repo": "asb-42/danwa-modules",
+  "repo": "Saga-AI-Labs/danwa-modules",
   "module_id": "danwa-translations-de",
   "version": "1.2.0"
 }
@@ -172,7 +172,7 @@ Ablauf:
 4. Existierenden `install_from_url()`-Pfad nutzen
 5. Dependencies prüfen (siehe Punkt 7)
 
-### `GET /api/v1/modules/repo-index?repo=asb-42/danwa-modules`
+### `GET /api/v1/modules/repo-index?repo=Saga-AI-Labs/danwa-modules`
 
 - Holt `index.json` (mit 5-Minuten-Caching)
 - Listet alle verfügbaren Module mit Version + Stats

@@ -38,7 +38,7 @@ Security:
 Mirroring:
 ----------
 Fetch this template:
-    curl -L https://raw.githubusercontent.com/asb-42/danwa/main/\\
+    curl -L https://raw.githubusercontent.com/Saga-AI-Labs/danwa/main/\\
         repo-templates/danwa-core/backend/api/routers/system_control.py \\
         -o backend/api/routers/system_control.py
 

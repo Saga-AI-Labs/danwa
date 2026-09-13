@@ -38,9 +38,9 @@ Danach soll `danwa` nur noch folgende User-Features haben:
 
 | Repo | Lokal | GitHub | Inhalt | Letzter Commit |
 |------|-------|--------|--------|----------------|
-| `danwa-core` (Backend) | `/media/data/coding/danwa-core` | `github.com/asb-42/danwa-core` | `backend/` (api, blueprints, core, models, workflow, services, migrations, tasks), `config/`, `modules/`, `profiles/`, `scripts/`, `deploy/`, `packages/`, `pyproject.toml`, `Dockerfile`, `docker-compose.yml`, `Makefile` | `13f501b` "Stage all changes before filter" |
-| `danwa-studio` (Admin/Dev-Frontend) | `/media/data/coding/danwa-studio` | `github.com/asb-42/danwa-studio` | Svelte 5 + Vite Setup, `src/{views,components,lib,routes}` (22 Views + Blueprint-Komponenten kopiert), `vite.config.js`, `tailwind.config.js`, `AGENTS.md`, `CLAUDE.md` | `2232daa` "Sprint 1: Workflow Templates View, LLM Profiles View + Modal, ConfirmDialog, i18n keys, all Blueprint Canvas components from danwa" |
-| `danwa-modules` (Module) | `/media/data/coding/danwa-modules` | `github.com/asb-42/danwa-modules` | `agent-argumentation-patterns/`, `agent-bundles/`, `agent-cores/`, `agent-prompt-modifiers/`, `agent-tone-profiles/`, `kitsune-assistant/`, `llm-profiles/`, `ui-translations/`, `workflows/`, `schemas/`, `scripts/` | `7659b7a` "fix: replace placeholder api_key_env in 2 LLM profiles" |
+| `danwa-core` (Backend) | `/media/data/coding/danwa-core` | `github.com/Saga-AI-Labs/danwa-core` | `backend/` (api, blueprints, core, models, workflow, services, migrations, tasks), `config/`, `modules/`, `profiles/`, `scripts/`, `deploy/`, `packages/`, `pyproject.toml`, `Dockerfile`, `docker-compose.yml`, `Makefile` | `13f501b` "Stage all changes before filter" |
+| `danwa-studio` (Admin/Dev-Frontend) | `/media/data/coding/danwa-studio` | `github.com/Saga-AI-Labs/danwa-studio` | Svelte 5 + Vite Setup, `src/{views,components,lib,routes}` (22 Views + Blueprint-Komponenten kopiert), `vite.config.js`, `tailwind.config.js`, `AGENTS.md`, `CLAUDE.md` | `2232daa` "Sprint 1: Workflow Templates View, LLM Profiles View + Modal, ConfirmDialog, i18n keys, all Blueprint Canvas components from danwa" |
+| `danwa-modules` (Module) | `/media/data/coding/danwa-modules` | `github.com/Saga-AI-Labs/danwa-modules` | `agent-argumentation-patterns/`, `agent-bundles/`, `agent-cores/`, `agent-prompt-modifiers/`, `agent-tone-profiles/`, `kitsune-assistant/`, `llm-profiles/`, `ui-translations/`, `workflows/`, `schemas/`, `scripts/` | `7659b7a` "fix: replace placeholder api_key_env in 2 LLM profiles" |
 
 ### Beobachtungen aus der Inventur
 

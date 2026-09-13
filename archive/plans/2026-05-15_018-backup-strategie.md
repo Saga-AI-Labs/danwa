@@ -462,7 +462,7 @@ backups/*
 
 | Plan | Beziehung |
 |------|-----------|
-| [Plan 017 — Versionierung](https://github.com/asb-42/danwa/blob/main/archive/plans/017-versionierung.md) | ✅ Abgeschlossen — `app_version` wird dynamisch aus `/version` gelesen und in Backup-Metadata geschrieben |
-| [Plan 016 — Service LLM](https://github.com/asb-42/danwa/blob/main/archive/plans/016-service-llm.md) | ✅ Abgeschlossen — Kein direkter Einfluss auf Backup |
-| [Plan 009 — Modularisierung](https://github.com/asb-42/danwa/blob/main/archive/plans/009-modularisierung-gesamtplan.md) | 🔶 Modul-System soll zukünftig eigene Datenpfade registrieren können → BackupService muss erweiterbar sein |
+| [Plan 017 — Versionierung](https://github.com/Saga-AI-Labs/danwa/blob/main/archive/plans/017-versionierung.md) | ✅ Abgeschlossen — `app_version` wird dynamisch aus `/version` gelesen und in Backup-Metadata geschrieben |
+| [Plan 016 — Service LLM](https://github.com/Saga-AI-Labs/danwa/blob/main/archive/plans/016-service-llm.md) | ✅ Abgeschlossen — Kein direkter Einfluss auf Backup |
+| [Plan 009 — Modularisierung](https://github.com/Saga-AI-Labs/danwa/blob/main/archive/plans/009-modularisierung-gesamtplan.md) | 🔶 Modul-System soll zukünftig eigene Datenpfade registrieren können → BackupService muss erweiterbar sein |
 

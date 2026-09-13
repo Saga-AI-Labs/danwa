@@ -1,13 +1,13 @@
 # Danwa Studio — Sprint 1 Status & Todo
 
 > Letzte Aktualisierung: 2026-06-15
-> Repository: `danwa-studio` (https://github.com/asb-42/danwa-studio)
-> Backend: `danwa-core` (https://github.com/asb-42/danwa-core)
+> Repository: `danwa-studio` (https://github.com/Saga-AI-Labs/danwa-studio)
+> Backend: `danwa-core` (https://github.com/Saga-AI-Labs/danwa-core)
 
 ## Git Remotes
 
-- `git@github.com:asb-42/danwa-core.git`
-- `git@github.com:asb-42/danwa-studio.git`
+- `git@github.com:Saga-AI-Labs/danwa-core.git`
+- `git@github.com:Saga-AI-Labs/danwa-studio.git`
 
 ## Architektur
 

@@ -119,14 +119,14 @@ release are listed in chronological order under each version heading.
 
 ### Repo orchestration (Phase 2 of plan — danwa-core setup+manage)
 - **`danwa-core` setup.sh + manage.sh mirror templates** at `repo-templates/danwa-core/`. These are the canonical reference for the orchestrator pattern (danwa-core manages backend + sibling frontends). To use: copy `setup.sh` and `manage.sh` into a danwa-core clone, then run `bash setup.sh` and `bash manage.sh start`.
-- **Mirror strategy:** this repo (`danwa`) provides the Single Source of Truth (`repo-templates/danwa-core/`). The downstream `danwa-core` repo should fetch these templates via `curl -L https://raw.githubusercontent.com/asb-42/danwa/main/repo-templates/danwa-core/{setup,manage}.sh -o ./{setup,manage}.sh`.
+- **Mirror strategy:** this repo (`danwa`) provides the Single Source of Truth (`repo-templates/danwa-core/`). The downstream `danwa-core` repo should fetch these templates via `curl -L https://raw.githubusercontent.com/Saga-AI-Labs/danwa/main/repo-templates/danwa-core/{setup,manage}.sh -o ./{setup,manage}.sh`.
 - **bats test suite added** at `tests/scripts/{setup,manage_orchestrator}.bats` with 20 tests (8 setup + 12 manage). All green.
   Run: `bats tests/scripts/`
 
 
 ### Repo orchestration (Phase 3 of plan — danwa-studio setup+manage)
 - **`danwa-studio` setup.sh + manage.sh mirror templates** at `repo-templates/danwa-studio/`. Simpler than danwa-core's templates: Node-only, no orchestration, single component (Vite).
-- **Mirror strategy:** same as Phase 2 — this repo is the Single Source of Truth; downstream fetches via `curl -L https://raw.githubusercontent.com/asb-42/danwa/main/repo-templates/danwa-studio/{setup,manage}.sh`.
+- **Mirror strategy:** same as Phase 2 — this repo is the Single Source of Truth; downstream fetches via `curl -L https://raw.githubusercontent.com/Saga-AI-Labs/danwa/main/repo-templates/danwa-studio/{setup,manage}.sh`.
 - **bats test suite added** at `tests/scripts/{setup,manage}_studio.bats` with 20 tests (9 setup + 11 manage). All green.
 ### Repo orchestration (Phase 4 of plan — Backend API: system_control)
 - **`system_control.py` mirror template** at `repo-templates/danwa-core/backend/api/routers/system_control.py`. Enables `danwa-studio` (and other admin clients) to restart/stop the backend via HTTP.
@@ -134,14 +134,14 @@ release are listed in chronological order under each version heading.
   - `POST /api/v1/system/restart-backend` — graceful restart, requires admin, returns 202 + job_id
   - `POST /api/v1/system/stop-backend` — graceful stop, requires admin, returns 202 + job_id
   - `GET /api/v1/system/status` — health + pids + uptime, no auth (monitoring endpoint)
-- **Mirror strategy:** `curl -L https://raw.githubusercontent.com/asb-42/danwa/main/repo-templates/danwa-core/backend/api/routers/system_control.py -o backend/api/routers/system_control.py`. Register in `backend/api/__init__.py` with `prefix="/api/v1/system"`.
+- **Mirror strategy:** `curl -L https://raw.githubusercontent.com/Saga-AI-Labs/danwa/main/repo-templates/danwa-core/backend/api/routers/system_control.py -o backend/api/routers/system_control.py`. Register in `backend/api/__init__.py` with `prefix="/api/v1/system"`.
 - **pytest test suite** at `tests/backend/test_system_control.py` with 9 tests (2 contract + 7 runtime). All green.
 
 
 ### Repo orchestration (Phase 5 of plan — danwa-core watcher loop + extended JSON)
 - **`danwa-core/manage.sh` extended with watcher loop** at `repo-templates/danwa-core/manage.sh`. The watcher (`BACKEND_WATCHER_ENABLED=1`) auto-respawns the backend process if it crashes unexpectedly. After a `restart-backend` call from danwa-studio's SystemManagementView, the watcher respawns; after `stop-backend`, the watcher exits cleanly.
 - **JSON status extended** with new fields: `version`, `watcher_enabled`, `last_restart_at`, per-component `alive`/`pid`/`port`. The format is now the same shape as `system_control.py`'s `/system/status` endpoint (Phase 4), so the studio SystemManagementView can poll either source.
-- **Mirror strategy:** same as before — fetch the template via `curl -L https://raw.githubusercontent.com/asb-42/danwa/main/repo-templates/danwa-core/manage.sh -o manage.sh`.
+- **Mirror strategy:** same as before — fetch the template via `curl -L https://raw.githubusercontent.com/Saga-AI-Labs/danwa/main/repo-templates/danwa-core/manage.sh -o manage.sh`.
 - **bats test suite added** at `tests/scripts/manage_watcher.bats` with 5 tests (JSON contract). Full respawn behavior is covered by the danwa-studio SystemManagementView integration test in Phase 7.
 
 
@@ -274,4 +274,4 @@ Blueprint-canvas pipeline, but the Workspace / Browse views
 were not yet functional, and the LLM-Activity monitor was
 embedded in the header without a clear visual marker.)
 
-[0.3.0]: https://github.com/asb-42/danwa/releases/tag/v0.3.0
+[0.3.0]: https://github.com/Saga-AI-Labs/danwa/releases/tag/v0.3.0

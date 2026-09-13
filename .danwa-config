@@ -13,4 +13,4 @@ SIBLINGS=("danwa-core")
 TOOLCHAIN_NODE=18
 TOOLCHAIN_NPM=required
 TOOLCHAIN_UV=optional
-DOCS_URL="https://github.com/asb-42/danwa"
+DOCS_URL="https://github.com/Saga-AI-Labs/danwa"
