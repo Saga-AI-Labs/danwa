@@ -44,3 +44,9 @@ select = ["E", "F", "I", "N", "W", "UP"]
 
 [project.optional-dependencies]
 test = ["pytest>=8.0", "pytest-asyncio>=0.23", "ruff>=0.4"]
+
+# No Python packages in this repo (frontend + config only).
+# Explicitly disable auto-discovery to prevent setuptools from choking
+# on non-Python top-level directories (plans/, deploy/, modules/, etc.).
+[tool.setuptools.packages.find]
+include = []
